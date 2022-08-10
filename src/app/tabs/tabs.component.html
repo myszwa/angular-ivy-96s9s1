@@ -1,0 +1,284 @@
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="1. Opis">
+    <form
+      class="configuation-tool__properties"
+      action="#"
+      #addInsipiration="ngForm"
+      (ngSubmit)="getValues(addInsipiration.value)"
+    >
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name">Nazwa</span>
+        <input
+          type="text"
+          name="inspirationid"
+          class="configuration-tool__input"
+          ngModel
+        />
+      </label>
+
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name">Pomieszczenie</span>
+        <input
+          type="text"
+          name="space"
+          class="configuration-tool__input"
+          ngModel
+        />
+      </label>
+
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name">Styl</span>
+        <input
+          type="text"
+          name="style"
+          class="configuration-tool__input"
+          ngModel
+        />
+      </label>
+
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name">Kolor dominujący</span>
+        <div class="configuration-tool__color-property">
+          <svg
+            class="configuration-tool__color-circle"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.733 9.125c.529 1.974.529 3.776 0 5.751l-1.075.65L12 12l9.787-3.462.946.587z"
+              fill="#FEFE33"
+            />
+            <path
+              d="M14.876 1.268c1.975.529 3.535 1.43 4.98 2.875l.028 1.106L12 12l1.914-10.2.962-.532z"
+              fill="#FB9902"
+            />
+            <path
+              d="M19.857 4.144c1.445 1.445 2.346 3.006 2.876 4.98L12 12l7.857-7.856z"
+              fill="#FABC02"
+            />
+            <path
+              d="M4.146 4.143c1.446-1.445 3.007-2.346 4.981-2.875l1.152.71L12.003 12 4.125 5.336l.021-1.193z"
+              fill="#FE2712"
+            />
+            <path
+              d="M9.125 1.268c1.975-.53 3.777-.53 5.752 0L12 12 9.125 1.268z"
+              fill="#FD5308"
+            />
+            <path
+              d="M1.264 14.876c-.53-1.975-.53-3.777 0-5.751l1.235-.83L11.997 12l-9.518 3.53-1.215-.654z"
+              fill="#8601AF"
+            />
+            <path
+              d="M1.266 9.125c.529-1.975 1.43-3.536 2.875-4.981L11.998 12 1.266 9.125z"
+              fill="#A7194B"
+            />
+            <path
+              d="M9.122 22.733c-1.975-.53-3.536-1.43-4.981-2.876l.092-1.253L11.997 12l-1.731 10.21-1.144.523z"
+              fill="#0247FE"
+            />
+            <path
+              d="M4.141 19.857c-1.445-1.446-2.346-3.006-2.875-4.981L11.998 12l-7.857 7.857z"
+              fill="#3D01A4"
+            />
+            <path
+              d="M19.857 19.857c-1.446 1.445-3.006 2.346-4.981 2.876l-1.078-.671L12 12l7.824 6.718.033 1.139z"
+              fill="#66B032"
+            />
+            <path
+              d="M14.877 22.733c-1.975.529-3.777.529-5.752 0L12.001 12l2.876 10.733z"
+              fill="#0391CE"
+            />
+            <path
+              d="M22.733 14.876c-.53 1.975-1.43 3.535-2.876 4.98L12 12l10.733 2.876z"
+              fill="#D0EA2B"
+            />
+            <path
+              d="M12 18.836a6.835 6.835 0 1 0 0-13.671 6.835 6.835 0 0 0 0 13.67z"
+              fill="#fff"
+            />
+          </svg>
+          <span class="configuration-tool__hash">#</span>
+          <input
+            type="text"
+            name="primarycolor"
+            class="
+              configuration-tool__input configuration-tool__input--is-color
+            "
+            ngModel
+          />
+        </div>
+      </label>
+
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name"
+          >Kolor dopełniający</span
+        >
+        <div class="configuration-tool__color-property">
+          <svg
+            class="configuration-tool__color-circle"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.733 9.125c.529 1.974.529 3.776 0 5.751l-1.075.65L12 12l9.787-3.462.946.587z"
+              fill="#FEFE33"
+            />
+            <path
+              d="M14.876 1.268c1.975.529 3.535 1.43 4.98 2.875l.028 1.106L12 12l1.914-10.2.962-.532z"
+              fill="#FB9902"
+            />
+            <path
+              d="M19.857 4.144c1.445 1.445 2.346 3.006 2.876 4.98L12 12l7.857-7.856z"
+              fill="#FABC02"
+            />
+            <path
+              d="M4.146 4.143c1.446-1.445 3.007-2.346 4.981-2.875l1.152.71L12.003 12 4.125 5.336l.021-1.193z"
+              fill="#FE2712"
+            />
+            <path
+              d="M9.125 1.268c1.975-.53 3.777-.53 5.752 0L12 12 9.125 1.268z"
+              fill="#FD5308"
+            />
+            <path
+              d="M1.264 14.876c-.53-1.975-.53-3.777 0-5.751l1.235-.83L11.997 12l-9.518 3.53-1.215-.654z"
+              fill="#8601AF"
+            />
+            <path
+              d="M1.266 9.125c.529-1.975 1.43-3.536 2.875-4.981L11.998 12 1.266 9.125z"
+              fill="#A7194B"
+            />
+            <path
+              d="M9.122 22.733c-1.975-.53-3.536-1.43-4.981-2.876l.092-1.253L11.997 12l-1.731 10.21-1.144.523z"
+              fill="#0247FE"
+            />
+            <path
+              d="M4.141 19.857c-1.445-1.446-2.346-3.006-2.875-4.981L11.998 12l-7.857 7.857z"
+              fill="#3D01A4"
+            />
+            <path
+              d="M19.857 19.857c-1.446 1.445-3.006 2.346-4.981 2.876l-1.078-.671L12 12l7.824 6.718.033 1.139z"
+              fill="#66B032"
+            />
+            <path
+              d="M14.877 22.733c-1.975.529-3.777.529-5.752 0L12.001 12l2.876 10.733z"
+              fill="#0391CE"
+            />
+            <path
+              d="M22.733 14.876c-.53 1.975-1.43 3.535-2.876 4.98L12 12l10.733 2.876z"
+              fill="#D0EA2B"
+            />
+            <path
+              d="M12 18.836a6.835 6.835 0 1 0 0-13.671 6.835 6.835 0 0 0 0 13.67z"
+              fill="#fff"
+            />
+          </svg>
+          <span class="configuration-tool__hash">#</span>
+          <input
+            type="text"
+            name="complementarycolor"
+            class="
+              configuration-tool__input configuration-tool__input--is-color
+            "
+            ngModel
+          />
+        </div>
+      </label>
+
+      <label for="name" class="configuration-tool__property">
+        <span class="configuration-tool__property-name">Kolor akcętujący</span>
+        <div class="configuration-tool__color-property">
+          <svg
+            class="configuration-tool__color-circle"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.733 9.125c.529 1.974.529 3.776 0 5.751l-1.075.65L12 12l9.787-3.462.946.587z"
+              fill="#FEFE33"
+            />
+            <path
+              d="M14.876 1.268c1.975.529 3.535 1.43 4.98 2.875l.028 1.106L12 12l1.914-10.2.962-.532z"
+              fill="#FB9902"
+            />
+            <path
+              d="M19.857 4.144c1.445 1.445 2.346 3.006 2.876 4.98L12 12l7.857-7.856z"
+              fill="#FABC02"
+            />
+            <path
+              d="M4.146 4.143c1.446-1.445 3.007-2.346 4.981-2.875l1.152.71L12.003 12 4.125 5.336l.021-1.193z"
+              fill="#FE2712"
+            />
+            <path
+              d="M9.125 1.268c1.975-.53 3.777-.53 5.752 0L12 12 9.125 1.268z"
+              fill="#FD5308"
+            />
+            <path
+              d="M1.264 14.876c-.53-1.975-.53-3.777 0-5.751l1.235-.83L11.997 12l-9.518 3.53-1.215-.654z"
+              fill="#8601AF"
+            />
+            <path
+              d="M1.266 9.125c.529-1.975 1.43-3.536 2.875-4.981L11.998 12 1.266 9.125z"
+              fill="#A7194B"
+            />
+            <path
+              d="M9.122 22.733c-1.975-.53-3.536-1.43-4.981-2.876l.092-1.253L11.997 12l-1.731 10.21-1.144.523z"
+              fill="#0247FE"
+            />
+            <path
+              d="M4.141 19.857c-1.445-1.446-2.346-3.006-2.875-4.981L11.998 12l-7.857 7.857z"
+              fill="#3D01A4"
+            />
+            <path
+              d="M19.857 19.857c-1.446 1.445-3.006 2.346-4.981 2.876l-1.078-.671L12 12l7.824 6.718.033 1.139z"
+              fill="#66B032"
+            />
+            <path
+              d="M14.877 22.733c-1.975.529-3.777.529-5.752 0L12.001 12l2.876 10.733z"
+              fill="#0391CE"
+            />
+            <path
+              d="M22.733 14.876c-.53 1.975-1.43 3.535-2.876 4.98L12 12l10.733 2.876z"
+              fill="#D0EA2B"
+            />
+            <path
+              d="M12 18.836a6.835 6.835 0 1 0 0-13.671 6.835 6.835 0 0 0 0 13.67z"
+              fill="#fff"
+            />
+          </svg>
+          <span class="configuration-tool__hash">#</span>
+          <input
+            type="text"
+            name="accentcolor"
+            class="
+              configuration-tool__input configuration-tool__input--is-color
+            "
+            ngModel
+          />
+        </div>
+      </label>
+
+      <div class="configuration-tool__button-container">
+        <input
+          type="reset"
+          value="Anuluj"
+          class="configuration-tool__cancel-button"
+        />
+        <input
+          type="submit"
+          value="Dalej"
+          class="configuration-tool__submit-button"
+        />
+      </div></form
+  ></mat-tab>
+  <mat-tab label="2. Dekory">Content 2</mat-tab>
+  <mat-tab label="3. Dodatkowe">Content 3</mat-tab>
+</mat-tab-group>

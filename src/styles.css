@@ -1,0 +1,388 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.mat-ink-bar {
+  background-color: #bd9176 !important;
+}
+.mat-tab-label .mat-tab-label-content {
+  font-size: 22px;
+  color: #19212b;
+  font-family: Montserrat;
+}
+
+.mat-tab-label .mat-tab-label-content-avtive {
+  font-size: 55px;
+}
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+  display: none !important;
+}
+
+.add-inspiration__container {
+  margin: 0px auto;
+  width: 1288px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 904px;
+}
+.add-inspiration__container .add-inspiration__image-wrapper {
+  width: 743px;
+  height: 50px;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-uplaod__container {
+  height: 648px;
+  background: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-uplaod__container
+  .file-upload__send-image {
+  width: 241px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-uplaod__container
+  .file-upload__send-image
+  .file-upload__sign {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-uplaod__container
+  .file-upload__send-image
+  .file-upload__title {
+  color: #19212b;
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-uplaod__container
+  .file-upload__send-input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-upload__tags-container {
+  margin-top: 32px;
+}
+.add-inspiration__container
+  .add-inspiration__image-wrapper
+  .file-upload
+  .file-upload__tags-container
+  .tags-container {
+  padding-top: 24px;
+}
+.add-inspiration__container .tags-section {
+  margin-top: 32px;
+}
+.add-inspiration__container .tags-section .tags-section__title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+  height: 24px;
+  font-family: Montserrat;
+  margin-bottom: 8px;
+}
+.add-inspiration__container .tags-section .tags-section__subtitle {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #333;
+}
+.add-inspiration__container .tags-section .tags-section__add-btn {
+  width: 112px;
+  height: 44px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  border-radius: 100px;
+  border: solid 1px #bd9176;
+  background-color: #ededed;
+}
+.add-inspiration__container .tags-section .tags-section__btn-image {
+  margin-right: 10px;
+}
+.add-inspiration__container .tags-section .tags-section__container {
+  padding-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+}
+.add-inspiration__container
+  .tags-section
+  .tags-section__container
+  .tags-section__tag {
+  width: 112px;
+  height: 44px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  border-radius: 100px;
+  border: solid 1px #bd9176;
+  background-color: #ededed;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.add-inspiration__container
+  .tags-section
+  .tags-section__container
+  .tags-section__tag
+  .tag-section__tag-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  background: #fff;
+  margin-right: 10px;
+}
+.add-inspiration__container
+  .tags-section
+  .tags-section__container
+  .tags-section__tag
+  .tag-section__tag-color--is-red {
+  background: #933747;
+}
+.add-inspiration__container .add-inspiration__configuration-tool {
+  width: 525px;
+  height: 50px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool
+  .configuration-tool__title {
+  height: 28px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19212b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool
+  .configuration-tool__list-item {
+  display: flex;
+  justify-content: center;
+  width: 175px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool
+  .line {
+  display: inline-block;
+  width: 323px;
+  height: 1px;
+  background: #bd9176;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool__step-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool__step-list
+  .configuration-tool__btn {
+  font-family: Montserrat;
+  font-size: 22px;
+  color: #757574;
+  background: none;
+  border: none;
+  display: flex;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool__step-list
+  .configuration-tool__btn--is-opened {
+  font-weight: bold;
+  color: #19212b;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool__step-list
+  .configuration-tool__span {
+  color: #9d9d9c;
+  margin-right: 10px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuration-tool__step-list
+  .configuration-tool__span--is-opened {
+  font-weight: bold;
+  color: #9d9d9c;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 28px;
+  position: relative;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property
+  .configuration-tool__input {
+  height: 48px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px #d7d0cd;
+  background-color: #fff;
+  width: 100%;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property
+  .configuration-tool__input--is-color {
+  padding-left: 50px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property
+  .configuration-tool__property-name {
+  font-size: 16px;
+  color: #333333;
+  font-family: Montserrat;
+  font-weight: bold;
+  height: 32px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property
+  .configuration-tool__color-circle {
+  position: absolute;
+  left: 12px;
+  top: 44.9px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__property
+  .configuration-tool__hash {
+  position: absolute;
+  left: 40px;
+  top: 44px;
+  font-size: 16px;
+  color: #333333;
+  font-family: Montserrat;
+  font-weight: bold;
+  height: 24px;
+  width: 12px;
+  display: flex;
+  align-items: center;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 46px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__button-container
+  .configuration-tool__cancel-button {
+  width: 83px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+  border: solid 2px #bd9176;
+  color: #bd9176;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 16px;
+}
+.add-inspiration__container
+  .add-inspiration__configuration-tool
+  .configuation-tool__properties
+  .configuration-tool__button-container
+  .configuration-tool__submit-button {
+  width: 71px;
+  height: 40px;
+  border-radius: 4px;
+  background: #bd9176;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px auto;
+  width: 1440px;
+  height: 1024px;
+}
+
+.page__nav {
+  height: 72px;
+  width: 100%;
+  margin-bottom: 48px;
+} /*# sourceMappingURL=style.css.map */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
