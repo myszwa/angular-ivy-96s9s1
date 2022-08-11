@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DecorsComponent } from './decors/decors.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, MatTabsModule, BrowserAnimationsModule],
-  declarations: [AppComponent, HelloComponent, TabsComponent],
+  declarations: [AppComponent, HelloComponent, TabsComponent, DecorsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
