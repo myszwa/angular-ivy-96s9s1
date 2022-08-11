@@ -1,6 +1,9 @@
 /* Add application styles & imports to this file! */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+.mat-tab-label-active .mat-tab-label-content {
+  color: #19212b !important;
+  font-weight: bold;
+}
 .mat-ink-bar {
   background-color: #bd9176 !important;
 }
