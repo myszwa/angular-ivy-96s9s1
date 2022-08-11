@@ -1,5 +1,225 @@
 .add-decor {
   width: 852px;
   height: 900px;
-  background-color: aqua;
+  border: 0.11px solid grey;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 17px;
+
+  .add-decor__close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  .add-decor__form {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-flow: column wrap;
+    .add-decor__add-products {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      width: 166px;
+      height: 40px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+      border-radius: 4px;
+      background-color: #bd9176;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: 0.8px;
+      text-align: left;
+      color: #fff;
+      border: none;
+    }
+    .add-decor__title {
+      height: 48px;
+      align-self: stretch;
+      flex-grow: 0;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.26;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+      margin-top: 60px;
+    }
+
+    .add-decor__search {
+      .add-decor__search-input {
+        width: 100%;
+        height: 56px;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-radius: 4px;
+        border: solid 1px #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        color: #d7d0cd;
+        margin-top: 32px;
+      }
+    }
+    .add-decor__property {
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: 32px;
+      .add-decor__input {
+        width: 100%;
+        height: 56px;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-radius: 4px;
+        border: solid 1px #d7d0cd;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #19212b;
+      }
+
+      .add-decor__property-name {
+        width: 130px;
+        height: 24px;
+        flex-grow: 0;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        color: #19212b;
+      }
+    }
+
+    .add-decor__selected-decors {
+      margin-top: 32px;
+      .add-decor__selected-decors-container {
+        display: flex;
+        margin-top: 16px;
+      }
+      .add-decor__selected-title {
+        width: 130px;
+        height: 24px;
+        flex-grow: 0;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        color: #19212b;
+      }
+
+      .add-decor__selected-decor {
+        height: 24px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding: 2px 8px;
+        border-radius: 100px;
+        background-color: #ededed;
+        font-family: Montserrat;
+        font-size: 12px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .add-decor__choose-decor {
+    .add-decor__decors-list {
+      margin-top: 32px;
+      height: 376px;
+      overflow: hidden;
+      overflow-y: scroll;
+      .add-decor__decor {
+        width: 100%;
+        height: 64px;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding: 16px;
+        border-radius: 4px;
+        border: solid 1px #d7d0cd;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #19212b;
+        margin-bottom: 8px;
+        .add-decor__decor-image {
+          width: 48px;
+          height: 48px;
+          border-radius: 4px;
+          background: lightcoral;
+          margin-left: 24px;
+          margin-right: 24px;
+        }
+        .add-decor__decor-input {
+        }
+
+        .add-decor__decor-title {
+          width: 118px;
+          height: 24px;
+          flex-grow: 0;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000;
+        }
+
+        .add-decor__decor-number {
+          width: 92.3px;
+          height: 20px;
+          flex-grow: 0;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.67;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000;
+        }
+      }
+    }
+  }
 }
