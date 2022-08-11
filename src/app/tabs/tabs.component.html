@@ -102,7 +102,7 @@
           </svg>
           <span class="configuration-tool__hash">#</span>
           <input
-            type="text"
+            type="number"
             name="primarycolor"
             class="
               configuration-tool__input configuration-tool__input--is-color
@@ -180,7 +180,7 @@
           </svg>
           <span class="configuration-tool__hash">#</span>
           <input
-            type="text"
+            type="number"
             name="complementarycolor"
             class="
               configuration-tool__input configuration-tool__input--is-color
@@ -279,6 +279,122 @@
         />
       </div></form
   ></mat-tab>
-  <mat-tab label="2. Dekory">Content 2</mat-tab>
+  <mat-tab label="2. Dekory">
+    <form class="decors-section">
+      <div class="decors-section__title">
+        Dodaj dekory, które zostały użyte w inspiracji
+      </div>
+
+      <div class="decors-section__container">
+        <div class="decors-section__decor">
+          <div class="decors-section__decor-image"></div>
+          <div class="decors-section__decor-type-container">
+            <div class="decors-section__decor-name">Marmur calacatta</div>
+            <div class="decors-section__decor-number">R55082</div>
+          </div>
+          <svg
+            class="decors-section__decor-close"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
+              fill="#BD9176"
+              stroke="#BD9176"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m9.172 14.83 5.66-5.66M14.832 14.83l-5.66-5.66"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <div class="decors-section__decor">
+          <div
+            class="
+              decors-section__decor-image decors-section__decor-image--is-sosna
+            "
+          ></div>
+          <div class="decors-section__decor-type-container">
+            <div class="decors-section__decor-name">Sosna słowiańska</div>
+            <div class="decors-section__decor-number">R55082</div>
+          </div>
+          <svg
+            class="decors-section__decor-close"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
+              fill="#BD9176"
+              stroke="#BD9176"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m9.172 14.83 5.66-5.66M14.832 14.83l-5.66-5.66"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <button class="decors-section__add-btn">
+        <svg
+          class="decors-section__btn-image"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
+            fill="#BD9176"
+            stroke="#BD9176"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8 12h8M12 16V8"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Dodaj dekor
+      </button>
+
+      <div class="decors-section__button-container">
+        <input
+          type="reset"
+          value="Anuluj"
+          class="decors-section__cancel-button"
+        />
+        <input
+          type="submit"
+          value="Dalej"
+          class="decors-section__submit-button"
+        />
+      </div>
+    </form>
+  </mat-tab>
   <mat-tab label="3. Dodatkowe">Content 3</mat-tab>
 </mat-tab-group>

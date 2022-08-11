@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   imports: [BrowserModule, FormsModule, MatTabsModule, BrowserAnimationsModule],
   declarations: [AppComponent, HelloComponent, TabsComponent],

@@ -1,5 +1,6 @@
 /* Add application styles & imports to this file! */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .mat-tab-label-active .mat-tab-label-content {
   color: #19212b !important;
   font-weight: bold;
@@ -199,7 +200,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool
@@ -292,7 +293,7 @@
   .configuation-tool__properties
   .configuration-tool__property
   .configuration-tool__input--is-color {
-  padding-left: 50px;
+  padding-left: 56px;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool

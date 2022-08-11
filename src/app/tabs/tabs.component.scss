@@ -1,0 +1,105 @@
+.decors-section {
+  height: 806px;
+  .decors-section__container {
+    display: flex;
+  }
+  .decors-section__title {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #333;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .decors-section__button-container {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+
+    .decors-section__cancel-button {
+      width: 83px;
+      height: 40px;
+      border-radius: 4px;
+      background: none;
+      border: solid 2px #bd9176;
+      color: #bd9176;
+
+      font-weight: bold;
+
+      margin-right: 16px;
+    }
+
+    .decors-section__submit-button {
+      width: 71px;
+      height: 40px;
+      border-radius: 4px;
+      background: #bd9176;
+
+      font-weight: bold;
+      color: #fff;
+      border: none;
+    }
+  }
+
+  .decors-section__add-btn {
+    width: 163px;
+    height: 64px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    border-radius: 100px;
+    border: solid 1px #bd9176;
+    background-color: #ededed;
+    .decors-section__btn-image {
+      margin-right: 8px;
+    }
+  }
+
+  .decors-section__decor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 267px;
+    height: 64px;
+    padding: 10px 15px;
+    border-radius: 100px;
+    background-color: rgba(237, 237, 237, 0.7);
+    margin-bottom: 32px;
+    margin-right: 8px;
+    .decors-section__decor-name {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .decors-section__decor-number {
+      width: 45px;
+      height: 20px;
+      flex-grow: 0;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: #19212b;
+    }
+    .decors-section__decor-image {
+      border-radius: 100px;
+      background-color: rgba(237, 237, 237, 0.7);
+      height: 44px;
+      width: 44px;
+    }
+    .decors-section__decor-image--is-sosna {
+      background-color: rgba(110, 46, 46, 0.7);
+    }
+  }
+}
