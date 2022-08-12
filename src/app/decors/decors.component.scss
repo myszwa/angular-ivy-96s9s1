@@ -1,3 +1,27 @@
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 376px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ededed;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 228px;
+  border-radius: 4px;
+  background-color: #d7d0cd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .add-decor {
   width: 852px;
   height: 900px;
@@ -164,7 +188,7 @@
       overflow: hidden;
       overflow-y: scroll;
       .add-decor__decor {
-        width: 100%;
+        width: 783px;
         height: 64px;
         align-self: stretch;
         flex-grow: 0;

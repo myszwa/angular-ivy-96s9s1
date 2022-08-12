@@ -1,4 +1,4 @@
-<mat-tab-group mat-align-tabs="start">
+<mat-tab-group mat-align-tabs="start" [selectedIndex]="selectedIndex">
   <mat-tab label="1. Opis">
     <form
       class="configuation-tool__properties"
@@ -383,18 +383,21 @@
       </button> -->
       <dialog-overview-example></dialog-overview-example>
       <div class="decors-section__button-container">
-        <input
-          type="reset"
-          value="Anuluj"
-          class="decors-section__cancel-button"
-        />
-        <input
-          type="submit"
-          value="Dalej"
-          class="decors-section__submit-button"
-        />
+        <button (click)="previousStep()" class="decors-section__cancel-button">
+          Anuluj
+        </button>
+        <button (click)="nextStep()" class="decors-section__submit-button">
+          Dalej
+        </button>
       </div>
     </form>
   </mat-tab>
-  <mat-tab label="3. Dodatkowe">Content 3</mat-tab>
+  <mat-tab label="3. Dodatkowe">
+    <button (click)="previousStep()" class="decors-section__cancel-button">
+      Anuluj
+    </button>
+    <button (click)="nextStep()" class="decors-section__submit-button">
+      Dalej
+    </button></mat-tab
+  >
 </mat-tab-group>
