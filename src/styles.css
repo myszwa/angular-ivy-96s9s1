@@ -1,6 +1,26 @@
 /* Add application styles & imports to this file! */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+.mat-dialog-container {
+  padding: 0px !important;
+}
+.decors-section__add-btn {
+  width: 163px;
+  height: 64px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  border-radius: 100px;
+  border: solid 1px #bd9176;
+  background-color: #ededed;
+}
+.decors-section__btn-image {
+  margin-right: 8px;
+}
 .mat-tab-label-active .mat-tab-label-content {
   color: #19212b !important;
   font-weight: bold;
@@ -385,7 +405,7 @@
 }
 
 .page__nav {
-  height: 950px;
+  height: 76px;
   width: 100%;
   margin-bottom: 48px;
   display: flex;
