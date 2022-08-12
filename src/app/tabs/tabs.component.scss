@@ -1,3 +1,5 @@
+
+
 .decors-section {
   height: 806px;
   .decors-section__container {
@@ -40,24 +42,6 @@
       font-weight: bold;
       color: #fff;
       border: none;
-    }
-  }
-
-  .decors-section__add-btn {
-    width: 163px;
-    height: 64px;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: Montserrat;
-    font-size: 16px;
-    border-radius: 100px;
-    border: solid 1px #bd9176;
-    background-color: #ededed;
-    .decors-section__btn-image {
-      margin-right: 8px;
     }
   }
 
