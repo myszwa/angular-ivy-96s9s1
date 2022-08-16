@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { MatTabGroup } from '@angular/material/tabs';
 
 @Component({
@@ -7,11 +8,21 @@ import { MatTabGroup } from '@angular/material/tabs';
   styleUrls: ['./tabs.component.scss'],
 })
 export class TabsComponent implements OnInit {
+  nazwaFormularza: FormGroup;
   constructor() {}
 
   @ViewChild('tabgroup') tabgroup;
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.nazwaFormularza = new FormGroup({
+      name: new FormControl(),
+      space: new FormControl(),
+      style: new FormControl(),
+      primaryColor: new FormControl(),
+      complementaryColor: new FormControl(),
+      accentColor: new FormControl(),
+    });
+  }
 
   getValues(val) {
     console.warn(val);

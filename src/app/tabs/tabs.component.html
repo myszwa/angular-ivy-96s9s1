@@ -5,6 +5,7 @@
       action="#"
       #addInsipiration="ngForm"
       (ngSubmit)="getValues(addInsipiration.value)"
+      [formGroup]="nazwaFormularza"
     >
       <label for="name" class="configuration-tool__property">
         <span class="configuration-tool__property-name">Nazwa</span>
@@ -12,7 +13,7 @@
           type="text"
           name="inspirationid"
           class="configuration-tool__input"
-          ngModel
+          formControlName="name"
         />
         <svg
           class="check"
@@ -36,7 +37,7 @@
           name="space"
           list="place"
           class="configuration-tool__input"
-          ngModel
+          formControlName="space"
         />
 
         <datalist id="place">
@@ -69,7 +70,7 @@
           type="text"
           name="style"
           class="configuration-tool__input"
-          ngModel
+          formControlName="style"
         />
         <svg
           class="arrow-down"
@@ -160,7 +161,7 @@
             class="
               configuration-tool__input configuration-tool__input--is-color
             "
-            ngModel
+            formControlName="primaryColor"
           />
         </div>
       </label>
@@ -237,7 +238,7 @@
             class="
               configuration-tool__input configuration-tool__input--is-color
             "
-            ngModel
+            formControlName="complementaryColor"
           />
         </div>
       </label>
@@ -312,7 +313,7 @@
             class="
               configuration-tool__input configuration-tool__input--is-color
             "
-            ngModel
+            formControlName="accentColor"
           />
         </div>
       </label>
@@ -435,6 +436,7 @@
         Dodaj dekor
       </button> -->
       <dialog-overview-example></dialog-overview-example>
+
       <div class="decors-section__button-container">
         <button
           (click)="changeIndex(tabgroup, 0)"
@@ -453,6 +455,61 @@
   </mat-tab>
   <mat-tab label="3. Dodatkowe">
     <div class="additional-section">
+      <form class="configuation-tool__properties" action="#">
+        <label for="name" class="configuration-tool__property">
+          <span class="configuration-tool__property-name">Dodaj autora</span>
+          <input
+            type="text"
+            name="inspirationid"
+            class="configuration-tool__input"
+          />
+          <svg
+            class="check"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.71 7.21a.999.999 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a.999.999 0 0 0 0-1.47z"
+              fill="#BD9176"
+            />
+          </svg>
+        </label>
+
+        <label for="name" class="configuration-tool__property">
+          <span class="configuration-tool__property-name">Link</span>
+          <input
+            type="text"
+            name="inspirationid"
+            class="configuration-tool__input"
+          />
+          <svg
+            class="check"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.71 7.21a.999.999 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a.999.999 0 0 0 0-1.47z"
+              fill="#BD9176"
+            />
+          </svg>
+        </label>
+        <label for="name" class="configuration-tool__property">
+          <span class="configuration-tool__property-name"
+            >Widoczność inspiracji</span
+          >
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox5" name="" value="" />
+            <label for="checkbox5"><span></span></label>
+          </div>
+          <span>Chcę ukryć inspirację</span>
+        </label>
+      </form>
       <div class="additional-section__button-container">
         <button
           (click)="changeIndex(tabgroup, 1)"
