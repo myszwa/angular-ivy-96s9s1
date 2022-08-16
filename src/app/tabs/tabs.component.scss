@@ -1,5 +1,13 @@
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
 
-
+.arrow-down,
+.check {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
 .decors-section {
   height: 806px;
   .decors-section__container {
@@ -84,6 +92,51 @@
     }
     .decors-section__decor-image--is-sosna {
       background-color: rgba(110, 46, 46, 0.7);
+    }
+  }
+}
+
+.additional-section {
+  height: 718px;
+  position: relative;
+
+  .additional-section__button-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    .additional-section__cancel-button {
+      width: 83px;
+      height: 40px;
+      border-radius: 4px;
+      background: none;
+      border: solid 2px #bd9176;
+      color: #bd9176;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: bold;
+
+      margin-right: 16px;
+    }
+
+    .additional-section__submit-button {
+      width: 244px;
+      height: 40px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      object-fit: contain;
+      border-radius: 4px;
+      background-color: #bd9176;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      color: #fff;
     }
   }
 }

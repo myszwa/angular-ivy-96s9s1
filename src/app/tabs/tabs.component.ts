@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTabGroup } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-tabs',
@@ -8,25 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class TabsComponent implements OnInit {
   constructor() {}
 
+  @ViewChild('tabgroup') tabgroup;
+
   ngOnInit() {}
 
   getValues(val) {
     console.warn(val);
   }
 
-  selectedIndex: number = 0;
-  maxNumberOfTabs: number = 2;
-  nextStep() {
-    if (this.selectedIndex != this.maxNumberOfTabs && this.selectedIndex <= 1) {
-      this.selectedIndex = this.selectedIndex + 1;
-    }
-    console.log(this.selectedIndex);
-  }
+  placeList = [
+    { code: 'Kuchnia', name: 'item1' },
+    { code: 'Łazienka', name: 'item2' },
+    { code: 'Salon', name: 'item3' },
+    { code: 'Sypialnia', name: 'item4' },
+  ];
 
-  previousStep() {
-    if (this.selectedIndex != 0) {
-      this.selectedIndex = this.selectedIndex - 1;
-    }
-    console.log(this.selectedIndex);
+  changeIndex(tabgroup: MatTabGroup, number: number) {
+    tabgroup.selectedIndex = number;
   }
 }

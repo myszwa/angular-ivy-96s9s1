@@ -21,7 +21,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+// input[type='checkbox'] {
+//   height: 24px;
+//   width: 24px;
+//   display: inline-block;
+//   padding: 0 0 0 0px;
+//   border: 1px solid #9d9d9c;
+// }
+// input[type='checkbox']:checked {
+//   height: 20px;
+//   width: 150px;
+// }
 .add-decor {
   width: 852px;
   height: 900px;
@@ -108,6 +118,12 @@
       display: flex;
       flex-flow: column wrap;
       margin-top: 32px;
+      position: relative;
+      .arrow-down {
+        position: absolute;
+        bottom: 16px;
+        right: 12px;
+      }
       .add-decor__input {
         width: 100%;
         height: 56px;
@@ -205,6 +221,7 @@
         letter-spacing: normal;
         text-align: left;
         color: #19212b;
+        position: relative;
         margin-bottom: 8px;
         .add-decor__decor-image {
           width: 48px;
@@ -213,8 +230,6 @@
           background: lightcoral;
           margin-left: 24px;
           margin-right: 24px;
-        }
-        .add-decor__decor-input {
         }
 
         .add-decor__decor-title {
