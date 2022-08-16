@@ -329,6 +329,7 @@
           value="Dalej"
           class="configuration-tool__submit-button"
           (click)="changeIndex(tabgroup, 1)"
+          (click)="zatwierdz()" [disabled] = "!nazwaFormularza.valid"
         />
       </div>
     </form>
@@ -509,18 +510,18 @@
           </div>
           <span>Chcę ukryć inspirację</span>
         </label>
+        <div class="additional-section__button-container">
+          <button
+            (click)="changeIndex(tabgroup, 1)"
+            class="additional-section__cancel-button"
+          >
+            Wróc
+          </button>
+          <button class="additional-section__submit-button">
+            Zapisz i dodaj inspirację
+          </button>
+        </div>
       </form>
-      <div class="additional-section__button-container">
-        <button
-          (click)="changeIndex(tabgroup, 1)"
-          class="additional-section__cancel-button"
-        >
-          Wróc
-        </button>
-        <button class="additional-section__submit-button">
-          Zapisz i dodaj inspirację
-        </button>
-      </div>
     </div>
   </mat-tab>
 </mat-tab-group>
