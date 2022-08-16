@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatTabGroup } from '@angular/material/tabs';
 
 @Component({
@@ -15,13 +15,30 @@ export class TabsComponent implements OnInit {
 
   ngOnInit() {
     this.nazwaFormularza = new FormGroup({
-      name: new FormControl(),
+      name: new FormControl('', [
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(10),
+      ]),
       space: new FormControl(),
       style: new FormControl(),
       primaryColor: new FormControl(),
       complementaryColor: new FormControl(),
       accentColor: new FormControl(),
     });
+
+    const obj = {
+      name: '',
+      space: '',
+      style: '',
+      primaryColor: '',
+      complementaryColor: '',
+      accentColor: '',
+    };
+
+    this.nazwaFormularza.patchValue(obj);
+
+    this.nazwaFormularza.valueChanges.subscribe((el) => console.log(el));
   }
 
   getValues(val) {
@@ -37,5 +54,19 @@ export class TabsComponent implements OnInit {
 
   changeIndex(tabgroup: MatTabGroup, number: number) {
     tabgroup.selectedIndex = number;
+  }
+
+  zatwierdz() {
+    console.log(this.nazwaFormularza.value);
+    console.log(this.nazwaFormularza.valid);
+    console.log(this.nazwaFormularza.get('wlasciwosc1').value);
+
+    console.log(this.nazwaFormularza.valid);
+    console.log(this.nazwaFormularza.invalid);
+    console.log(this.nazwaFormularza.pending);
+    console.log(this.nazwaFormularza.pristine);
+    console.log(this.nazwaFormularza.dirty);
+    console.log(this.nazwaFormularza.touched);
+    console.log(this.nazwaFormularza.untouched);
   }
 }
