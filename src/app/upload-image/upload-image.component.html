@@ -35,6 +35,11 @@
       </div>
       <span class="file-upload__title">Wgraj plik</span>
     </div>
+    <img
+      [src]="imageUrl"
+      style=""
+      class="uploaded-image"
+    />
     <input
       class="file-upload__send-input"
       type="file"
@@ -43,6 +48,7 @@
       cap
       #Image
       accept="image/*"
+      (change)="onselectFile($event)"
     />
   </div>
 </div>

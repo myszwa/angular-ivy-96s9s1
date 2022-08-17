@@ -20,30 +20,30 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin: 4px;
-  width: 22px;
-  height: 22px;
+  margin: 6px;
+  width: 18px;
+  height: 18px;
   transition: transform 0.28s ease;
-  border-radius: 3px;
+  border-radius: 6px;
   border: 2px solid #9d9d9c;
 }
 .checkbox label:after {
   content: '';
   display: block;
-  width: 10px;
-  height: 5px;
-  border-bottom: 2px solid #9d9d9c;
-  border-left: 2px solid #9d9d9c;
+  width: 8px;
+  height: 3px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
   -webkit-transform: rotate(-45deg) scale(0);
   transform: rotate(-45deg) scale(0);
   transition: transform ease 0.25s;
   will-change: transform;
   position: absolute;
-  top: 12px;
-  left: 10px;
+  top: 13px;
+  left: 11.6px;
 }
 .checkbox input[type='checkbox']:checked ~ label::before {
-  color: #7bbe72;
+  background: #9d9d9c;
 }
 
 .checkbox input[type='checkbox']:checked ~ label::after {
@@ -52,7 +52,7 @@
 }
 
 .checkbox label {
-  min-height: 34px;
+  min-height: 30px;
   display: block;
   padding-left: 40px;
   margin-bottom: 0;
@@ -83,8 +83,9 @@
   font-family: Montserrat;
   font-size: 16px;
   border-radius: 100px;
-  border: solid 1px #bd9176;
+  border: none;
   background-color: #ededed;
+  cursor: pointer;
 }
 .decors-section__btn-image {
   margin-right: 8px;
@@ -221,6 +222,7 @@
   border-radius: 100px;
   border: solid 1px #bd9176;
   background-color: #ededed;
+  cursor: pointer;
 }
 .add-inspiration__container .tags-section .tags-section__btn-image {
   margin-right: 10px;
@@ -249,6 +251,7 @@
   background-color: #ededed;
   margin-bottom: 8px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .add-inspiration__container
   .tags-section
@@ -289,6 +292,23 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
+}
+.configuration-tool__hide-inspiration {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.configuration-tool__hide-inspiration-span {
+  flex-grow: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a1a1a;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool
