@@ -19,6 +19,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { UploadImageComponent } from './upload-image/upload-image.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -39,6 +40,7 @@ import { MatIconModule } from '@angular/material/icon';
     DecorsComponent,
     DialogOverviewExample,
     DialogOverviewExampleDialog,
+    UploadImageComponent,
   ],
   bootstrap: [AppComponent],
 })
