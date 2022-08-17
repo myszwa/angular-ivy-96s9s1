@@ -1,0 +1,58 @@
+.dropdown-menu {
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  content: url('data:image/svg+xml; utf8, <svg viewBox="0 0 18 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"> <g transform="matrix(1,0,0,1,-3,-7.99875)"><path d="M19.92,8.95L13.4,15.47C12.63,16.24 11.37,16.24 10.6,15.47L4.08,8.95" style="fill:none;fill-rule:nonzero;stroke:rgb(189,145,118);stroke-width:1.5px;"/></g></svg> ');
+  border: none;
+  width: 18px;
+  height: auto;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.dropdown-toggle-up::after {
+  content: url('data:image/svg+xml; utf8, <svg viewBox="0 0 18 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"> <g transform="matrix(1,0,0,1,-3,-7.99875)"><path d="M19.92,8.95L13.4,15.47C12.63,16.24 11.37,16.24 10.6,15.47L4.08,8.95" style="fill:none;fill-rule:nonzero;stroke:rgb(189,145,118);stroke-width:1.5px;"/></g></svg> ');
+  border: none;
+  width: 18px;
+  height: auto;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  animation: rotate 0.5s linear forwards;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
+    transform-origin: center center;
+  }
+}
+
+.select-view {
+  width: 100%;
+  border: solid 2px #bd9176;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin: 38px 0 56px 0;
+
+  &__button {
+    all: unset !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: #bd9176 !important;
+  }
+
+  &__list {
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
+    transform: translate(0px, 27px) !important;
+
+    button {
+      color: #bd9176;
+    }
+  }
+}

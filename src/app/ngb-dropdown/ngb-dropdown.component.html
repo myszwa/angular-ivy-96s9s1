@@ -1,0 +1,24 @@
+<div ngbDropdown class="d-inline-block select-view" (click)="expandList()">
+  <button
+    [ngClass]="expandedList ? 'dropdown-toggle-up' : 'dropdown-toggle'"
+    type="button"
+    class="btn btn-outline-primary font700 select-view__button"
+    id="dropdownBasic1"
+    ngbDropdownToggle
+  >
+    {{ choosenItem || 'Wszystkie' }}
+  </button>
+  <div
+    class="select-view__list"
+    ngbDropdownMenu
+    aria-labelledby="dropdownBasic1"
+  >
+    <button
+      ngbDropdownItem
+      *ngFor="let item of extendedList[0]"
+      (click)="selectItem(item.name)"
+    >
+      {{ item.name }}
+    </button>
+  </div>
+</div>
