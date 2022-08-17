@@ -288,7 +288,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool
@@ -354,7 +354,7 @@
   .configuration-tool__property {
   display: flex;
   flex-flow: column wrap;
-  margin-top: 28px;
+  margin-top: 32px;
   position: relative;
 }
 .add-inspiration__container
