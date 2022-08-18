@@ -19,12 +19,14 @@ export class NgbDropdownComponent implements OnInit {
     'Laminaty i obrzeża HPL',
     'Płyty laminowane',
   ];
-  @Input() choosenItem: string;
-  @Output() choosenItemChange = new EventEmitter<string>();
+
+  @Input() choosenItem: any;
+  @Output() choosenItemChange = new EventEmitter<any>();
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
+
   expandList() {
     this.expandedList = !this.expandedList;
   }

@@ -6,7 +6,7 @@
     id="dropdownBasic1"
     ngbDropdownToggle
   >
-    {{ choosenItem || 'Wszystkie' }}
+    {{ choosenItem ? choosenItem.name : 'Obrzeża papierowe' }}
   </button>
   <div
     class="select-view__list"
@@ -15,10 +15,18 @@
   >
     <button
       ngbDropdownItem
-      *ngFor="let item of extendedList[0]"
-      (click)="selectItem(item.name)"
+      *ngFor="let item of extendedList"
+      (click)="selectItem(item)"
     >
       {{ item.name }}
     </button>
   </div>
 </div>
+<!-- <select name="city" class="rounded-inputs20 select-select col-md-3" (change)="onChange($event.target.value)">
+<option *ngFor="let country of countries"  [value]="country.id">{{country.name}}</option>
+</select>
+
+<select id="sel1" name="Country" class="rounded-inputs20 select-select col-md-3">
+  <option *ngFor="let city of cities" [value]="city">{{city}}</option>  
+
+</select> -->
