@@ -15,16 +15,24 @@ export class TabsComponent implements OnInit {
 
   ngOnInit() {
     this.nazwaFormularza = new FormGroup({
-      name: new FormControl('', [
-        Validators.required,
-        Validators.minLength(10),
-        Validators.maxLength(10),
-      ]),
+      name: new FormControl(''),
       space: new FormControl(),
       style: new FormControl(),
-      primaryColor: new FormControl(),
-      complementaryColor: new FormControl(),
-      accentColor: new FormControl(),
+      primaryColor: new FormControl('', [
+        // Validators.required,
+        // Validators.minLength(6),
+        // Validators.maxLength(6),
+      ]),
+      complementaryColor: new FormControl('', [
+        // Validators.required,
+        // Validators.minLength(6),
+        // Validators.maxLength(6),
+      ]),
+      accentColor: new FormControl('', [
+        // Validators.required,
+        // Validators.minLength(6),
+        // Validators.maxLength(6),
+      ]),
     });
 
     const obj = {
@@ -57,16 +65,15 @@ export class TabsComponent implements OnInit {
   }
 
   zatwierdz() {
-    console.log(this.nazwaFormularza.value);
-    console.log(this.nazwaFormularza.valid);
-    console.log(this.nazwaFormularza.get('wlasciwosc1').value);
-
-    console.log(this.nazwaFormularza.valid);
-    console.log(this.nazwaFormularza.invalid);
-    console.log(this.nazwaFormularza.pending);
-    console.log(this.nazwaFormularza.pristine);
-    console.log(this.nazwaFormularza.dirty);
-    console.log(this.nazwaFormularza.touched);
-    console.log(this.nazwaFormularza.untouched);
+    // console.log(this.nazwaFormularza.value);
+    // console.log(this.nazwaFormularza.valid);
+    // console.log(this.nazwaFormularza.get('wlasciwosc1').value);
+    // console.log(this.nazwaFormularza.valid);
+    // console.log(this.nazwaFormularza.invalid);
+    // console.log(this.nazwaFormularza.pending);
+    // console.log(this.nazwaFormularza.pristine);
+    // console.log(this.nazwaFormularza.dirty);
+    // console.log(this.nazwaFormularza.touched);
+    // console.log(this.nazwaFormularza.untouched);
   }
 }

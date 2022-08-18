@@ -11,3 +11,15 @@
   width: 743px;
   border-radius: 4px;
 }
+
+.file-upload__change-label {
+  z-index: 5000000000;
+  position: absolute;
+  padding: 4px 10px;
+  right: 16px;
+  top: 15px;
+  background-color: #ffffff;
+  border: 2px solid #4a4a49;
+  border-radius: 4px;
+  cursor: pointer;
+}
