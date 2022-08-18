@@ -6,17 +6,14 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./ngb-dropdown.component.scss'],
 })
 export class NgbDropdownComponent implements OnInit {
+  dropdownFlag = false;
   expandedList: boolean = false;
-  @Input() extendedList: any = [
-    'Wszystkie',
-    'Płyty wiórowe',
-    'HDF',
-    'Blaty robocze',
-    'Obrzeża papierowe',
-    'Folie',
-    'Śccianki przyblatowe',
-    'Laminaty i obrzeża HPL',
-    'Płyty laminowane',
+
+  extendedList = [
+    { name: 'Kuchnia' },
+    { name: 'Łazienka' },
+    { name: 'Salon' },
+    { name: 'Sypialnia' },
   ];
   @Input() choosenItem: any;
   @Output() choosenItemChange = new EventEmitter<any>();
