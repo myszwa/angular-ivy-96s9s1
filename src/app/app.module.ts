@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { NgbDropdownComponent } from './ngb-dropdown/ngb-dropdown.component';
+import { TestComponent } from './test/test.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -43,6 +44,7 @@ import { NgbDropdownComponent } from './ngb-dropdown/ngb-dropdown.component';
     DialogOverviewExample,
     DialogOverviewExampleDialog,
     UploadImageComponent,
+    TestComponent
   ],
   bootstrap: [AppComponent],
 })
