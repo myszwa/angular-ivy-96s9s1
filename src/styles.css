@@ -20,7 +20,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin: 6px;
+  margin-top: 6px;
   width: 18px;
   height: 18px;
   transition: transform 0.28s ease;
@@ -40,7 +40,7 @@
   will-change: transform;
   position: absolute;
   top: 13px;
-  left: 11.6px;
+  left: 6px;
 }
 .checkbox input[type='checkbox']:checked ~ label::before {
   background: #9d9d9c;

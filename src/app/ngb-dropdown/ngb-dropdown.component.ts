@@ -7,8 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NgbDropdownComponent implements OnInit {
   expandedList: boolean = false;
-  // @Input() extendedList: any[];
-  extendedList: any = [
+  @Input() extendedList: any = [
     'Wszystkie',
     'Płyty wiórowe',
     'HDF',
@@ -19,7 +18,6 @@ export class NgbDropdownComponent implements OnInit {
     'Laminaty i obrzeża HPL',
     'Płyty laminowane',
   ];
-
   @Input() choosenItem: any;
   @Output() choosenItemChange = new EventEmitter<any>();
 

@@ -3,8 +3,6 @@
     <form
       class="configuation-tool__properties"
       action="#"
-      #addInsipiration="ngForm"
-      (ngSubmit)="getValues(addInsipiration.value)"
       [formGroup]="nazwaFormularza"
     >
       <label for="name" class="configuration-tool__property">
@@ -22,6 +20,7 @@
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          *ngIf="nazwaFormularza.value.name"
         >
           <path
             d="M18.71 7.21a.999.999 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a.999.999 0 0 0 0-1.47z"
@@ -458,7 +457,11 @@
   </mat-tab>
   <mat-tab label="3. Dodatkowe">
     <div class="additional-section">
-      <form class="configuation-tool__properties" action="#">
+      <form
+        class="configuation-tool__properties"
+        action="#"
+        [formGroup]="autorFormularza"
+      >
         <label for="name" class="configuration-tool__property">
           <span class="configuration-tool__property-name">Dodaj autora</span>
           <input
@@ -466,6 +469,7 @@
             name="inspirationid"
             class="configuration-tool__input"
             placeholder="Marek Nowak"
+            formControlName="author"
           />
           <svg
             class="check"
@@ -474,6 +478,7 @@
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            *ngIf="autorFormularza.value.author"
           >
             <path
               d="M18.71 7.21a.999.999 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a.999.999 0 0 0 0-1.47z"
@@ -489,6 +494,7 @@
             name="inspirationid"
             class="configuration-tool__input"
             placeholder="mareknowak@gmail.com"
+            formControlName="link"
           />
           <svg
             class="check"
@@ -497,6 +503,7 @@
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            *ngIf="autorFormularza.value.link"
           >
             <path
               d="M18.71 7.21a.999.999 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a.999.999 0 0 0 0-1.47z"
@@ -509,7 +516,7 @@
             >Widoczność inspiracji</span
           >
           <div class="configuration-tool__hide-inspiration">
-            <div class="checkbox">
+            <div class="checkbox checkbox--is-hide">
               <input type="checkbox" id="checkbox5" name="" value="" />
               <label for="checkbox5"><span></span></label>
             </div>

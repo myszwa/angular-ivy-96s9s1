@@ -9,13 +9,14 @@ import { MatTabGroup } from '@angular/material/tabs';
 })
 export class TabsComponent implements OnInit {
   nazwaFormularza: FormGroup;
+  autorFormularza: FormGroup;
   constructor() {}
 
   @ViewChild('tabgroup') tabgroup;
 
   ngOnInit() {
     this.nazwaFormularza = new FormGroup({
-      name: new FormControl(''),
+      name: new FormControl(),
       space: new FormControl(),
       style: new FormControl(),
       primaryColor: new FormControl('', [
@@ -35,6 +36,14 @@ export class TabsComponent implements OnInit {
       ]),
     });
 
+    this.autorFormularza = new FormGroup({
+      author: new FormControl('', [
+        Validators.required,
+        Validators.minLength(3),
+      ]),
+      link: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    });
+
     const obj = {
       name: '',
       space: '',
@@ -44,9 +53,15 @@ export class TabsComponent implements OnInit {
       accentColor: '',
     };
 
-    this.nazwaFormularza.patchValue(obj);
+    const obj1 = {
+      author: '',
+      link: '',
+    };
 
+    this.nazwaFormularza.patchValue(obj);
+    this.autorFormularza.patchValue(obj1);
     this.nazwaFormularza.valueChanges.subscribe((el) => console.log(el));
+    this.autorFormularza.valueChanges.subscribe((el) => console.log(el));
   }
 
   getValues(val) {
