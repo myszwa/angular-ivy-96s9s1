@@ -395,6 +395,15 @@
   border: solid 1px #d7d0cd;
   background-color: #fff;
   width: 100%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #19212b;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool

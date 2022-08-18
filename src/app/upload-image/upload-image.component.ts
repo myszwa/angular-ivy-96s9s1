@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-image.component.scss'],
 })
 export class UploadImageComponent implements OnInit {
+  isInputShown: boolean = true;
   imageUrl: string = '';
   constructor() {}
 
@@ -19,5 +20,8 @@ export class UploadImageComponent implements OnInit {
         this.imageUrl = event.target.result;
       };
     }
+  }
+  hideInput() {
+    this.isInputShown = false;
   }
 }

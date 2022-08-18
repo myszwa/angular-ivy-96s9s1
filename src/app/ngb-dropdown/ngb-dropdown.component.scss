@@ -62,12 +62,14 @@
     border: 0;
     border-radius: 4px;
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.1);
-    transform: translate(0px, 27px) !important;
-    position: relative;
+    transform: translate(0px, 0px) !important;
+    position: absolute;
     display: flex;
     flex-flow: column wrap;
     z-index: 50000000000000000000;
     justify-content: flex-start;
+    width: 100% !important;
+    background: #fff;
 
     button {
       background: none;

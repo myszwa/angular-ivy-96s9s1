@@ -35,11 +35,7 @@
       </div>
       <span class="file-upload__title">Wgraj plik</span>
     </div>
-    <img
-      [src]="imageUrl"
-      style=""
-      class="uploaded-image"
-    />
+    <img [src]="imageUrl" style="" class="uploaded-image" />
     <input
       class="file-upload__send-input"
       type="file"
@@ -49,12 +45,19 @@
       #Image
       accept="image/*"
       (change)="onselectFile($event)"
+      [hidden]="!isInputShown"
+      (click)="hideInput()"
     />
-    <ng-container *ngIf="imageUrl" >
-    <input class="file-upload__change-input" accept="image/jpeg, image/png, image/jpg" type="file" id="file" (change)="onselectFile($event)" name="photos"/>
-    <label for="file" class="file-upload__change-label">
-      Zmień
-    </label>
-  </ng-container>
+    <ng-container *ngIf="imageUrl">
+      <input
+        class="file-upload__change-input"
+        accept="image/jpeg, image/png, image/jpg"
+        type="file"
+        id="file"
+        (change)="onselectFile($event)"
+        name="photos"
+      />
+      <label for="file" class="file-upload__change-label"> Zmień </label>
+    </ng-container>
   </div>
 </div>
