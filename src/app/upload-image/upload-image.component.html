@@ -46,7 +46,7 @@
       accept="image/*"
       (change)="onselectFile($event)"
       [hidden]="!isInputShown"
-      (click)="hideInput()"
+      (change)="hideInput()"
     />
     <ng-container *ngIf="imageUrl">
       <input
