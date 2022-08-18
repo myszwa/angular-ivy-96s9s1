@@ -34,10 +34,18 @@
 
 .select-view {
   width: 525px;
-  border: solid 2px #bd9176;
+  height: 48px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
   border-radius: 4px;
-  padding: 6px 12px;
-  margin: 38px 0 56px 0;
+  border: solid 1px #d7d0cd;
+  background-color: #fff;
 
   &__button {
     all: unset !important;
@@ -45,7 +53,9 @@
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
-    color: #bd9176 !important;
+    color: #19212b !important;
+    font-family: Montserrat !important;
+    font-size: 16px !important;
   }
 
   &__list {
@@ -57,12 +67,16 @@
     display: flex;
     flex-flow: column wrap;
     z-index: 50000000000000000000;
-    background: red;
+    justify-content: flex-start;
 
     button {
-      color: #bd9176;
       background: none;
       border: none;
+      font-family: Montserrat !important;
+      font-size: 16px !important;
+      color: #19212b;
+      text-align: left;
+      padding: 12px;
     }
   }
 }
