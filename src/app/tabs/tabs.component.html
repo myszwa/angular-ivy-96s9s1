@@ -31,36 +31,6 @@
 
       <label for="name" class="configuration-tool__property">
         <span class="configuration-tool__property-name">Pomieszczenie</span>
-        <!-- <input
-          type="text"
-          name="space"
-          list="place"
-          class="configuration-tool__input"
-          formControlName="space"
-        />
-
-        <datalist id="place">
-          <option *ngFor="let c of placeList" [value]="c.code">
-            {{ c.name }}
-          </option>
-        </datalist>
-        <svg
-          class="arrow-down"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m19.92 8.95-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95"
-            stroke="#BD9176"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg> -->
         <app-ngb-dropdown></app-ngb-dropdown>
       </label>
 
@@ -411,33 +381,7 @@
           </svg>
         </div>
       </div>
-      <!-- <button class="decors-section__add-btn">
-        <svg
-          class="decors-section__btn-image"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"
-            fill="#BD9176"
-            stroke="#BD9176"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M8 12h8M12 16V8"
-            stroke="#fff"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        Dodaj dekor
-      </button> -->
+
       <dialog-overview-example></dialog-overview-example>
 
       <div class="decors-section__button-container">
@@ -512,11 +456,11 @@
             />
           </svg>
         </label>
-        <label for="name" class="configuration-tool__property">
+        <div class="configuration-tool__property">
           <span class="configuration-tool__property-name"
             >Widoczność inspiracji</span
           >
-          <div class="configuration-tool__hide-inspiration">
+          <label for="checkbox5" class="configuration-tool__hide-inspiration">
             <div class="checkbox checkbox--is-hide">
               <input type="checkbox" id="checkbox5" name="" value="" />
               <label for="checkbox5"><span></span></label>
@@ -524,6 +468,29 @@
             <span class="configuration-tool__hide-inspiration-span"
               >Chcę ukryć inspirację</span
             >
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5799 11.9999C15.5799 13.9799 13.9799 15.5799 11.9999 15.5799C10.0199 15.5799 8.41992 13.9799 8.41992 11.9999C8.41992 10.0199 10.0199 8.41992 11.9999 8.41992C13.9799 8.41992 15.5799 10.0199 15.5799 11.9999Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M11.9998 20.2702C15.5298 20.2702 18.8198 18.1902 21.1098 14.5902C22.0098 13.1802 22.0098 10.8102 21.1098 9.40021C18.8198 5.80021 15.5298 3.72021 11.9998 3.72021C8.46984 3.72021 5.17984 5.80021 2.88984 9.40021C1.98984 10.8102 1.98984 13.1802 2.88984 14.5902C5.17984 18.1902 8.46984 20.2702 11.9998 20.2702Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
             <svg
               width="24"
               height="24"
@@ -575,8 +542,8 @@
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
-        </label>
+          </label>
+        </div>
         <div class="additional-section__button-container">
           <button
             (click)="changeIndex(tabgroup, 1)"

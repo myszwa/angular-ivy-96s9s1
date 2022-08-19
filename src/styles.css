@@ -472,6 +472,7 @@
   font-weight: bold;
   font-size: 16px;
   margin-right: 16px;
+  cursor: pointer;
 }
 .add-inspiration__container
   .add-inspiration__configuration-tool
@@ -487,6 +488,7 @@
   color: #fff;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 
 * {

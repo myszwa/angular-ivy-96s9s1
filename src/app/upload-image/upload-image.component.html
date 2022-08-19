@@ -39,11 +39,10 @@
     <input
       class="file-upload__send-input"
       type="file"
-      accept=".png, .jpg, .jpeg .gif"
       id="inputTag"
       cap
       #Image
-      accept="image/*"
+      accept="image/jpeg, image/png, image/jpg"
       (change)="onselectFile($event)"
       [hidden]="!isInputShown"
       (change)="hideInput()"
