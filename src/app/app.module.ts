@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { NgbDropdownComponent } from './ngb-dropdown/ngb-dropdown.component';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { NgbDropdownComponent } from './ngb-dropdown/ngb-dropdown.component';
     MatTabsModule,
     MatDialogModule,
     MatInputModule,
+    ColorPickerModule,
   ],
   declarations: [
     AppComponent,

@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatTabGroup } from '@angular/material/tabs';
+import { ColorPickerService, Cmyk } from 'ngx-color-picker';
 
 @Component({
   selector: 'app-tabs',
@@ -10,30 +11,43 @@ import { MatTabGroup } from '@angular/material/tabs';
 export class TabsComponent implements OnInit {
   nazwaFormularza: FormGroup;
   autorFormularza: FormGroup;
-  constructor() {}
+  public color: string = '#ffffff';
+  public color1: string = '#000000';
+  public color2: string = '#444444';
+
+  public onChangeColor(color: string): void {
+    this.color = color;
+    this.nazwaFormularza.patchValue({ color });
+    console.log('Color changed:', color);
+  }
+  public onChangeColor1(color1: string): void {
+    this.color1 = color1;
+    this.nazwaFormularza.patchValue({ color1 });
+    console.log('Color changed:', color1);
+  }
+  public onChangeColor2(color2: string): void {
+    this.color2 = color2;
+    this.nazwaFormularza.patchValue({ color2 });
+    console.log('Color changed:', color2);
+  }
+  constructor(
+    public vcRef: ViewContainerRef,
+    private cpService: ColorPickerService
+  ) {}
 
   @ViewChild('tabgroup') tabgroup;
+  public onEventLog(event: string, data: any): void {
+    console.log(event, data);
+  }
 
   ngOnInit() {
     this.nazwaFormularza = new FormGroup({
       name: new FormControl(),
       space: new FormControl(),
       style: new FormControl(),
-      primaryColor: new FormControl('', [
-        // Validators.required,
-        // Validators.minLength(6),
-        // Validators.maxLength(6),
-      ]),
-      complementaryColor: new FormControl('', [
-        // Validators.required,
-        // Validators.minLength(6),
-        // Validators.maxLength(6),
-      ]),
-      accentColor: new FormControl('', [
-        // Validators.required,
-        // Validators.minLength(6),
-        // Validators.maxLength(6),
-      ]),
+      color: new FormControl(),
+      color1: new FormControl(),
+      color2: new FormControl(),
     });
 
     this.autorFormularza = new FormGroup({
